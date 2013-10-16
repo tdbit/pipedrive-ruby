@@ -29,7 +29,7 @@ class TestPipedriveOrganization < Test::Unit::TestCase
       )
 
     organization = ::Pipedrive::Organization.create({
-      name: "Dope.org"
+      :name => "Dope.org"
     })
 
     assert_equal "Dope.org", organization.name
